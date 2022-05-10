@@ -25,7 +25,7 @@ const Title = styled.a.attrs({
 const ModeSwitcher = styled.div`
   cursor: pointer;
   color: var(--colors-text);
-  font-size: var(--fs-md);
+  font-size: var(--fs-sm);
   text-transform: capitalize;
   & svg {
     margin-right: 0.75rem;
