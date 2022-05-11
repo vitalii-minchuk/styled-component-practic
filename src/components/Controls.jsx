@@ -19,13 +19,18 @@ const Wrapper = styled.div`
   @media(min-width: 767px) {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 `
 
-export const Controls = () => {
+export const Controls = ({onSearch}) => {
   const [search, setSearch] = useState('')
   const [region, setRegion] = useState('')
+
+  useEffect(() => {
+    const regionValue = region?.value || ''
+    onSearch(search, regionValue)
+  }, [search, region])
   
   return (
     <Wrapper>

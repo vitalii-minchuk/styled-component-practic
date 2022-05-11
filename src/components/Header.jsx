@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { IoMoon, IoSunnySharp} from 'react-icons/io5'
 import { Container } from './Container'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const HeaderEl = styled.header`
   box-shadow: var(--shadow);
@@ -14,8 +15,8 @@ const Wrapper = styled.div`
   align-items: center;
   padding: 1.4rem 0;
 `
-const Title = styled.a.attrs({
-  href: '/',
+const Title = styled(Link).attrs({
+  to: '/',
 })`
   color: var(--colors-text);
   font-size: var(--fs-sm);

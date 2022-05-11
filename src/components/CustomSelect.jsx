@@ -29,11 +29,12 @@ export const CustomSelect = styled(Select).attrs({
 
   & * {
     color: var(--colors-text) !important;
+    background-color: var(--colors-ui-base) !important;
   }
 
   & > div[id] {
     margin-top: 0.75rem;
-    background-color: var(--colors-ui-base);
+    background-color: white !important;
   }
 
 `
